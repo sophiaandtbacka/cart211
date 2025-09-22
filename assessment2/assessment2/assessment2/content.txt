@@ -1,5 +1,5 @@
 TITLE on all pages = 
-Origins of the Web
+//Origins of the Web
 
 NAV on all pages=
 Web 1.0 | Web 2.0 | Web 3.0 | Web 4.0
@@ -32,7 +32,7 @@ The Web became a space of collaboration and user-generated content, often referr
 
 PAGE 3***********************************************************************
 H2*
-The Semantic Web – Web 3.0
+//The Semantic Web – Web 3.0
 (image: cryptopunk.jpg)
 Source: nftnow.com
 MAIN*
