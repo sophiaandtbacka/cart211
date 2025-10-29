@@ -1,0 +1,125 @@
+/*everything outside of navigation */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+#wrapper {
+    margin-top: 0px;
+    float: right;
+    width: 65%;
+    margin-right: 50px;
+
+}
+
+header h1 {
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+/*only on bio page this is redundant rn but maybei in future will use other h3 so not redundant*/
+header h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: darkgray;
+}
+
+header img {
+    margin-top: 50px;
+    width: 100%;
+    max-height: 650px;
+}
+
+
+/*for books*/
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: darkgrey;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: width 100%;
+    gap: 16px;
+}
+
+.books img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* don't understand .books>div syntax why ... gone with >*/
+.books>div {
+    text-align: center;
+    padding: 10px;
+}
+
+.books figure {
+    margin: 0;
+}
+
+article figure figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/*what does this do, grid but as in image*/
+table img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*all footers*/
+footer {
+    margin-top: 20px;
+    min-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+/*end of body*/
+
+/*navigation, outside of body*/
+nav {
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    width: 30%;
+    line-height: 32px;
+    position: fixed;
+    font-size: 110%;
+}
+
+nav a {
+    text-decoration: underline;
+    text-decoration-color: darkgrey;
+    color: black;
+    font-weight: bold;
+}
+
+/*not sure what this does*/
+nav:hover {
+    color: darkgrey;
+}
