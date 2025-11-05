@@ -13,8 +13,8 @@
     <meta property="og:description" content="Humans of New York">
 
     <!--Author and Copyright-->
-    <meta name="author" content="Your Name">
-    <meta name="copyright" content="copyright your name, student project, 2025">
+    <meta name="author" content="Sophia Andtbacka">
+    <meta name="copyright" content="copyright Sophia, Cart 211 Assignment 5, fall 2025">
 
     <title>Humans of New York</title>
 
@@ -32,20 +32,31 @@
 </head>
 
 <body>
-    <!--Navigation-->
     <div id="wrapper">
         <header>
             <nav>
-                <div class="logo"><a href="#"><img src="assets/logo.png" alt="Logo" width="110px" height="50px">
+                <!--Banner Logo-->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="110px" height="50px">
                     </a>
                 </div>
 
-
+                <!--Navigation-->
                 <div class="menu1">
-                    <a href="index.html">STORIES</a><br>
-                    <a href="index.html">SERIES</a><br>
-                    <a href="#.html">ABOUT</a>
+                    <button class="close-menu">&times;</button>
+
+                    <a href="index.html" class="menuI">STORIES</a>
+                    <a href="#" class="menuI">SERIES</a>
+                    <a href="#" class="menuI_active">ABOUT</a>
                 </div>
+
+                <!--Hamburger menu botton for mobile version only-->
+                <div class="hamburger-menu">
+                    <button>
+                        <span class="fa fa-bars"></span>
+                    </button>
+                </div>
+
             </nav>
 
         </header>
@@ -70,63 +81,65 @@
 
                 <div class="books">
                     <figure class="im1">
-                        <img src="assets/america_pageant.jpg" class="im" alt="America Pageant" loading="lazy">
-                        <figcaption>America Pageant</figcaption>
+                        <a href=story1.html><img src="assets/america_pageant.jpg" class="im" alt="America Pageant"
+                                loading="lazy"></a>
+                        <div class="hover-text"> America Pageant</div>
                     </figure>
 
                     <figure class="im2">
-                        <img src="assets/Chipwich_guy.jpg" class="im" alt="Chipwich" loading="lazy">
-                        <figcaption>Chipwich</figcaption>
+                        <a href=#><img src="assets/Chipwich_guy.jpg" class="im" alt="Chipwich" loading="lazy"></a>
+                        <div class="hover-text"> Chipwich Guy</div>
                     </figure>
 
                     <figure class="im3">
-                        <img src="assets/end_of_life_patient.jpg" class="im" alt="End of Life Patient" loading="lazy">
-                        <figcaption>End of Life Patient</figcaption>
+                        <a href=#></a><img src="assets/end_of_life_patient.jpg" class="im" alt="End of Life Patient"
+                            loading="lazy">
+                        <div class="hover-text"> End of Life Patient </div>
                     </figure>
 
                     <figure class="im4">
                         <img src="assets/exhausting_to_me.jpg" class="im" alt="Exhausting to Me" loading="lazy">
-                        <figcaption>Exhausting to Me</figcaption>
+                        <div class="hover-text"> Exhausting to Me </div>
                     </figure>
 
                     <figure class="im5">
                         <img src="assets/fake_sport.jpg" class="im" alt="Fake Sport" loading="lazy">
-                        <figcaption>Fake Sport</figcaption>
+                        <div class="hover-text"> Fake Sport </div>
                     </figure>
 
                     <figure class="im6">
                         <img src="assets/gettin_married.jpg" class="im" alt="Getting Married" loading="lazy">
-                        <figcaption>Getting Married</figcaption>
+                        <div class="hover-text"> Getting Married </div>
                     </figure>
 
                     <figure class="im7">
                         <img src="assets/homework.jpg" class="im" alt="Homework" loading="lazy">
-                        <figcaption>Homework</figcaption>
+                        <div class="hover-text"> Homework </div>
                     </figure>
 
                     <figure class="im8">
                         <img src="assets/invisibility.jpg" class="im" alt="Invisibility" loading="lazy">
-                        <figcaption>Invisibility</figcaption>
+                        <div class="hover-text"> Indivisibility </div>
                     </figure>
 
                     <figure class="im9">
                         <img src="assets/Mardi-Gras.jpg" class="im" alt="Mardi Gras" loading="lazy">
-                        <figcaption>Mardi Gras</figcaption>
+                        <div class="hover-text"> Mardi Gras </div>
                     </figure>
 
                     <figure class="im10">
                         <img src="assets/Right_and_wrong.jpg" class="im" alt="Right and Wrong" loading="lazy">
-                        <figcaption>Right and Wrong</figcaption>
+                        <div class="hover-text"> Right and Wrong </div>
                     </figure>
 
                     <figure class="im11">
                         <img src="assets/sketchbook.jpg" class="im" alt="Sketchbook" loading="lazy">
-                        <figcaption>Sketchbook</figcaption>
+                        <div class="hover-text"> Sketchbook </div>
                     </figure>
 
                     <figure class="im12">
                         <img src="assets/the_algorithm.jpg" class="im" alt="Algorithm" loading="lazy">
-                        <figcaption>Algorithm</figcaption>
+                        <div class="hover-text"> Algorithm </div>
                     </figure>
 
                 </div>
@@ -148,10 +161,29 @@
                     <a href="#" class="fa fa-snapchat-ghost"></a>
                 </div>
             </div>
-            <small><em>© your name, cart 211, fall 2025, assessment 5, credits: humansofnyarchive.com</em></small>
+            <div class="credit"><small><em>© Sophia Andtbacka, cart 211, fall 2025, assessment 5, credits:
+                        humansofnyarchive.com</em></small></div>
         </footer>
 
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
 </body>
 
 </html>
