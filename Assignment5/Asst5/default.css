@@ -5,7 +5,6 @@
     margin-left: auto;
 }
 
-
 body {
     /*suggestion settings from google fonts*/
     font-family: "Roboto", sans-serif;
@@ -286,9 +285,9 @@ footer {
 }
 
 .social {
-    align-items: right;
-    text-align: right;
-    justify-content: right;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .social .fa {
