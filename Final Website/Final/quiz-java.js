@@ -2,16 +2,12 @@
 // 10 QUESTIONS WITH ARCHETYPES
 // ----------------------------------
 const all_questions = [
-    { question_string: "Question 1", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 2", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 3", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 4", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 5", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 6", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 7", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 8", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 9", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } },
-    { question_string: "Question 10", choices: { archetype1: "Answer 1", archetype2: "Answer 2", archetype3: "Answer 3", archetype4: "Answer 4", archetype5: "Answer 5" } }
+    { question_string: "What is your gender?", choices: { archetype1: "Male", archetype2: "Female", archetype3: "Non-Binary" } },
+    { question_string: "When you are overwhelmed what do you instinctively reach for?", choices: { archetype1: "A game or familiar digital world", archetype4: "A deep-dive video or long commentary", archetype3: "Social apps or messaging someone", archetype2: "Something creative to make or improve my life" } },
+    { question_string: "How do you usually decide what content to click on?", choices: { archetype1: "Whatever helps me escape for a bit", archetype4: "Something that explains a bigger pattern", archetype3: "Anything new that people are talking about", archetype2: "Things that match my aesthetic or interests" } },
+    { question_string: "What kind of online spaces feel most like home to you?", choices: { archetype1: "Small Discords, niche servers, or gaming groups", archetype4: "Forums or channels that question or analyze", archetype3: "Fast-moving feeds with constant updates", archetype2: "Visual platforms with inspiration and style" } },
+    { question_string: "Which feeling describes your relationship with the internet?", choices: { archetype1: "It is where I can be myself without pressure", archetype4: "It is a toolbox for finding truth and clarity", archetype3: "It is how I stay connected and in the loop", archetype2: "It is a place to express identity and taste" } },
+    { question_string: "When you watch people online, what catches your attention first?", choices: { archetype1: "Skill or mastery", archetype4: "Confidence or influence", archetype3: "Humor or personality", archetype2: "Style, vibe, or creativity" } },
 ];
 
 // ----------------------------------
