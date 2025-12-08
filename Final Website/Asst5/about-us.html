@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Description for SEO-->
+    <meta name="description" content="Humans of New York">
+
+    <!--Open Graph for Social Sharing-->
+    <meta property="og:title" content="Humans of New York">
+    <meta property="og:description" content="Humans of New York">
+
+    <!--Author and Copyright-->
+    <meta name="author" content="Sophia Andtbacka">
+    <meta name="copyright" content="copyright Sophia, Cart 211 Assignment 5, fall 2025">
+
+    <title>Humans of New York</title>
+
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="default.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Link to the Social Media Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="story-page">
+    <div id="wrapper">
+        <header>
+            <nav>
+                <!--Banner Logo-->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="110px" height="50px">
+                    </a>
+                </div>
+
+                <!--Navigation-->
+                <div class="menu1">
+                    <button class="close-menu">&times;</button>
+
+                    <a href="index.html" class="menuI">QUIZ</a>
+                    <a href="about-us.html" class="menuI">ABOUT</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">ARCHETYPE</button>
+                        <div class="dropdown-content">
+                            <a href="results-archetype1.html">ARCHETYPE 1</a>
+                            <a href="results-archetype2.html">ARCHETYPE 2</a>
+                            <a href="results-archetype3.html">ARCHETYPE 3</a>
+                            <a href="results-archetype4.html">ARCHETYPE 4</a>
+                            <a href="results-archetype5.html">ARCHETYPE 5</a>
+                        </div>
+                    </div>
+
+                    <!--Hamburger menu botton for mobile version only-->
+                    <div class="hamburger-menu">
+                        <button>
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div>
+
+            </nav>
+            <div class="news-ticker">
+                <div class="ticker">
+                    <div class="ticker__item"> News Flash Jason</div>
+                    <div class="ticker__item"> News Flash Jason</div>
+                    <div class="ticker__item"> News Flash Jason</div>
+                    <div class="ticker__item"> News Flash Jason</div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <article>
+                <h1>About Us</h1>
+
+                <div class="books">
+                    <figure class="story-left">
+                        <a href=about-us.html><img src="assets/america_pageant.jpg" alt="America Pageant"
+                                loading="lazy"></a>
+                        <div class="hover-text">About Us Image</div>
+                    </figure>
+
+                    <div class="story-right">
+                        <h2>Puppetters</h2>
+                        <p> XXXXX </p>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="social">
+
+                <!--Social Media Icons-->
+                <div class="icons-wrapper">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                </div>
+            </div>
+            <div class="credit"><small><em>© Sophia Andtbacka, cart 211, fall 2025, assessment 5, credits:
+                        humansofnyarchive.com</em></small></div>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+
+</html>

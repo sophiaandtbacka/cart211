@@ -1,0 +1,908 @@
+/* -------------------- START SCREEN -------------------- */
+.start-body {
+    background-color: #000;
+    background-image: url("assets/puppet-hands.jpg");
+    background-size: 100%;
+    /* show whole image without cropping */
+    background-repeat: no-repeat;
+    /* don’t tile */
+    background-position: center;
+    /* centers the image */
+}
+
+.start-header {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: '8-bit-font';
+    font-size: 60pt;
+}
+
+.start-paragraph {
+    padding: 2%;
+    background-color: #000000b3;
+    font-family: '8-bit-font';
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto 50px auto;
+    /* centers the block and keeps bottom margin */
+}
+
+.start-button {
+    text-align: center;
+}
+
+.start-text {
+    padding: 1%;
+    background-color: rgb(247, 3, 3);
+    color: white;
+    text-decoration: none;
+    font-family: '8-bit-font';
+    font-size: 20pt;
+}
+
+.start-text:hover {
+    color: rgb(16, 0, 0);
+}
+
+.start-footer {
+    display: flex;
+    align-items: center;
+    /* vertical center */
+    justify-content: flex-end;
+    /* push items to the right */
+    text-align: center;
+    /* centers text inside children if needed */
+
+    margin-top: 200px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    min-height: 30px;
+}
+
+.start-footer-text {
+    font-family: '8-bit-font';
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+    display: flex;
+}
+
+
+
+/* -------------------- DROPDOWN NAV -------------------- */
+.logo {
+    background-image: url("assets/net-banner.jpg");
+    max-width: 100%;
+    padding: 15%
+}
+
+.logo-text {
+    background-color: #000000b3;
+    text-align: center;
+    color: white;
+    font-family: '8-bit-font';
+    font-size: 40pt;
+    text-decoration: none;
+}
+
+/*tab section*/
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/*a for links or act each element make them block so that not default inline*/
+.menu1 a {
+    display: block;
+}
+
+nav a {
+    text-align: center;
+    /*makes all nav elements centered, default but good to have?*/
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.menuI {
+    text-align: right;
+}
+
+.menuI_active {
+    text-align: right;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* -------------------- NEWS TICKER -------------------- */
+:root {
+    --height: 50px;
+    --speed: 15s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ticker-tape {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: var(--height);
+    padding-left: 100%
+}
+
+
+.news-ticker .ticker {
+    margin-top: 50px;
+    height: var(--height);
+    line-height: var(--height);
+    white-space: nowrap;
+    padding-right: 100%;
+
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    -webkit-animation-duration: var(--speed);
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: var(--speed);
+
+}
+
+.news-ticker .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: '8-bit-font';
+    font-size: 3rem;
+    font-weight: 900;
+
+    color: rgb(0, 0, 0, 0, 2);
+}
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translate(-100%);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translate(-100%);
+    }
+}
+
+
+
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    /* let content define height */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+#wrapper {
+    background-color: white;
+    margin-top: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    /*suggestion settings from google fonts*/
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    line-height: 15px;
+    display: grid;
+    grid-template-columns: 100% 1fr;
+    background-color: black;
+    justify-content: space-between;
+}
+
+
+
+/*tab section*/
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/*a for links or act each element make them block so that not default inline*/
+.menu1 a {
+    display: block;
+}
+
+nav a {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.menuI {
+    text-align: right;
+}
+
+.menuI_active {
+    text-align: right;
+}
+
+/*all hamburger*/
+.hamburger-menu {
+    display: none;
+    /* Hidden by default, will be shown on mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    /* Size of the hamburger menu icon */
+    color: white;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+/*nav stop*/
+
+
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    font-size: 40px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+
+section {
+    margin-bottom: 30px;
+    padding: 50px;
+    text-align: justify;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/*not working*/
+.archtype-h2 {
+    float: right;
+    font-size: 150%;
+    max-width: 25%;
+}
+
+.books {
+    margin-top: 50px;
+    display: grid;
+    /*12 column norm chosen b/c easy number easily divided by 4,3,2,*/
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 100%;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.books figure {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+}
+
+.books img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.im {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: block;
+}
+
+.im1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.im2 {
+    grid-column: 5/9;
+    grid-row: 1/2;
+}
+
+.im3 {
+    grid-column: 9/13;
+    grid-row: 1/2;
+}
+
+.im4 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+
+.im5 {
+    grid-column: 5/9;
+    grid-row: 2/3;
+}
+
+.im6 {
+    grid-column: 9/13;
+    grid-row: 2/3;
+}
+
+.im7 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+}
+
+.im8 {
+    grid-column: 5/9;
+    grid-row: 3/4;
+}
+
+.im9 {
+    grid-column: 9/13;
+    grid-row: 3/4;
+}
+
+
+article figure figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*article figure div hovertext why first two like this*/
+
+
+.hover-text {
+    opacity: 0;
+    /*makes it so photos don't move to show text it is layered ontop*/
+    position: absolute;
+    /*not margin because using absolute position*/
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(220, 22, 22, 0.7);
+    padding: 3px;
+    /*rounds the corners*/
+    border-radius: 1px;
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.books figure:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+.books figure img {
+    transition: all 0.3s ease;
+}
+
+.books figure:hover img {
+    transform: scale(0.97);
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    min-height: 30px;
+    font-family: '8-bit-font';
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    display: flex;
+}
+
+
+.fa:hover {
+    color: lightgray;
+}
+
+/* Disable image hover transformations on story pages */
+.story-page .books figure:hover img,
+.story-page .books figure:hover .hover-text {
+    transform: none;
+    opacity: 1;
+    filter: none;
+    cursor: auto;
+}
+
+/* Hide hover text completely */
+.story-page .hover-text {
+    display: none !important;
+}
+
+.credit {
+    padding: 2px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* -------------------- Radical Pages All -------------------- */
+.body-rad1 {
+    background: black;
+    margin-top: 50px;
+}
+
+#rad-wrapper {
+    background-color: black;
+    margin-top: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@font-face {
+    font-family: '8-bit-font';
+    /* The name you want to call it */
+    src: url('assets/Font/Perfect\ DOS\ VGA\ 437.ttf') format('truetype');
+}
+
+.rad-text {
+    color: #f9f9f9;
+    font-family: '8-bit-font';
+}
+
+
+.news-ticker .rad-ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: '8-bit-font';
+    font-size: 2rem;
+    font-weight: 900;
+    color: greenyellow;
+}
+
+.rad-h2 {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 2, 2);
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+}
+
+.rad-imgs {
+    margin-top: 50px;
+    display: grid;
+    /*12 column norm chosen b/c easy number easily divided by 4,3,2,*/
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 100%;
+    gap: 10px;
+}
+
+article figure figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hover-text {
+    opacity: 0;
+    /*makes it so photos don't move to show text it is layered ontop*/
+    position: absolute;
+    /*not margin because using absolute position*/
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(242, 30, 2, 0.7);
+    padding: 3px;
+    /*rounds the corners*/
+    border-radius: 1px;
+    font-family: '8-bit-font';
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+
+.rad-imgs figure:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+.rad-imgs figure img {
+    transition: all 0.3s ease;
+}
+
+.rad-imgs figure:hover img {
+    transform: scale(0.97);
+    opacity: 0.5;
+    filter: blur(5px);
+
+}
+
+
+/*All return button*/
+.rad-button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rad-button-text {
+    padding: 10px;
+    background-color: white;
+    font-family: '8-bit-font';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.rad-button-text:hover {
+    color: greenyellow;
+}
+
+/* -------------------- Radical 1 Page -------------------- */
+
+.rad-imgs img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.rad-imgs figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rad-im {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.r1-im1 {
+    grid-column: 1/9;
+    grid-row: 1/8;
+}
+
+.r1-im2 {
+    grid-column: 9/13;
+    grid-row: 1/8;
+}
+
+.r1-im3 {
+    grid-column: 1/7;
+    grid-row: 1/6;
+}
+
+.r1-im4 {
+    grid-column: 7/13;
+    grid-row: 1/6;
+}
+
+/* -------------------- Radical 2 Page -------------------- */
+
+
+/* -------------------- Radical 3 Page -------------------- */
+.rad3-imgs {
+    margin-top: 50px;
+    display: grid;
+    /*12 column norm chosen b/c easy number easily divided by 4,3,2,*/
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 100%;
+    gap: 10px;
+}
+
+
+.rad3-im {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.r3-im1 {
+    grid-column: 1/13;
+    grid-row: 1/4;
+}
+
+.r3-im2 {
+    grid-column: 1/13;
+    grid-row: 8/13;
+}
+
+.r3-im3 {
+    grid-column: 1/7;
+    grid-row: 4/6;
+}
+
+.r3-im4 {
+    grid-column: 7/13;
+    grid-row: 6/8;
+}
+
+.r3-im5 {
+    grid-column: 7/13;
+    grid-row: 4/5;
+}
+
+.r3-im6 {
+    grid-column: 1/7;
+    grid-row: 6/7;
+}
+
+.r3-im7 {
+    grid-column: 1/7;
+    grid-row: 12/13;
+}
+
+.r3-im8 {
+    grid-column: 7/13;
+    grid-row: 12/13;
+}
+
+/* -------------------- Radical 4 Page -------------------- */
+.r4-im1 {
+    grid-column: 1/13;
+    grid-row: 1/13;
+}
+
+@media (max-width: 780px)
+/*at what width is this this going to be triggered at*/
+    {
+
+    button {
+        border-width: 0px;
+        background-color: black;
+    }
+
+    .close-menu {
+        display: block;
+        /*Ensure the button is visible*/
+        position: absolute;
+        /*Absolute positioning to place the button precisely*/
+        top: 20px;
+        /*space from the top*/
+        right: 20px;
+        /*Space from teh right*/
+        font-size: 50;
+        color: white;
+    }
+
+
+    .hamburger-menu {
+        display: flex;
+        /*knows it is a grid based selector, puts it in a block*/
+        /*Ensure the hamburger menu is visible and aligned*/
+        align-items: center;
+        /*Center the button vertically in the header*/
+    }
+
+    /*Display the menu fullsceeen on mobile*/
+    .menu-deployed {
+        display: flex !important;
+        ;
+        /*Use flexbox for layout*/
+        flex-direction: column;
+        /*stack elements vertically*/
+        align-items: center;
+        /*Center elements horizontally*/
+        width: 100%;
+        /*Take full width*/
+        height: 100vh;
+        /*Take full height of the viewport*/
+        position: fixed;
+        /*Fixed*/
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        /*controls arrangement of elements, arbitrarily large number*/
+        padding-top: 50px;
+    }
+
+    .menu1 {
+        display: none;
+        /*makes it so og computer display not shown and this replaces it*/
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        /* Ensure the menu is above other elements */
+    }
+
+    .menu1 a {
+        padding: 20px;
+        /*Increase padding to space out elements*/
+    }
+
+    /*makes it so addresses two states of buttons because like or in java*/
+    .menu1 a,
+    .menu1 a:hover {
+        text-decoration: none;
+        /*remve underline for normal and hover states*/
+        color: black;
+        /*link color unchanged*/
+        background-color: transparent;
+        /*no background change on hover*/
+        font-weight: bold;
+    }
+
+
+    nav {
+        margin: 20px auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid #000;
+        background: #000;
+        z-index: 1000;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    #wrapper {
+        margin-top: 50px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    /* Stack the image above the text on mobile for story pages */
+    .books {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-left,
+    .story-right {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+    }
+
+    .story-right {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+}

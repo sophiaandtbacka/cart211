@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Humans of New York">
+
+    <meta property="og:title" content="Humans of New York">
+    <meta property="og:description" content="Humans of New York">
+
+    <meta name="author" content="Sophia Andtbacka">
+    <meta name="copyright" content="copyright Sophia, Cart 211 Assignment 5, fall 2025">
+
+    <title>Archetype Net</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="quiz-body">
+    <div id="quiz">
+        <h1 id="quiz-name"></h1>
+
+        <!-- THIS WAS THE MISSING PART -->
+        <div id="question"></div>
+
+        <button id="submit-button">Submit Answers</button>
+        <button id="next-question-button">Next Question</button>
+        <button id="prev-question-button">Previous</button>
+
+        <div id="quiz-results">
+            <p id="quiz-results-message"></p>
+            <p id="quiz-results-score"></p>
+        </div>
+    </div>
+
+    <script src="quiz-java.js" defer></script>
+</body>
+
+</html>
